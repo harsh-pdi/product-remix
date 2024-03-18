@@ -4,7 +4,14 @@ import { getProducts } from "~/lib/api";
 import { Product } from "~/lib/constants";
 
 export async function loader () {
+    // const tracer = trace.getTracer(SERVICE_NAME);
+    // const productSpan = tracer.startSpan(SERVICE_NAME);
+    // productSpan.setAttribute('api-call', 'getting products list');
     const products = await getProducts();
+    // productSpan.addEvent('products-list', {
+    //     'log.message': JSON.stringify(products),
+    // });
+    // productSpan.end();
     return json({
         products,
     });

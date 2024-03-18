@@ -25,6 +25,7 @@
     "@remix-run/node": "^2.3.1",
     "@remix-run/react": "^2.3.1",
     "@remix-run/serve": "^2.3.1",
+    "axios": "^1.6.8",
     "isbot": "^3.6.8",
     "opentelemetry-instrumentation-remix": "^0.6.0",
     "react": "^18.2.0",
@@ -46,5 +47,6 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }

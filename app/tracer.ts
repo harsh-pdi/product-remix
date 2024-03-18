@@ -10,10 +10,9 @@ import {
     NodeTracerProvider,
     SimpleSpanProcessor
 } from "@opentelemetry/sdk-trace-node";
-import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
 import { RemixInstrumentation } from "opentelemetry-instrumentation-remix";
 
-const SERVICE_NAME = process.env.SERVICE_NAME || "texting_web";
+export const SERVICE_NAME = process.env.SERVICE_NAME || "texting_web";
 const SERVICE_VERSION = process.env.SERVICE_VERSION;
 const IS_TELEMETRY_ENABLED = process.env.IS_TELEMETRY_ENABLED && true;
 const TRACES_ENDPOINT = process.env.TRACES_ENDPOINT;
@@ -38,8 +37,8 @@ export default async function registerTracer() {
     const resource = new Resource({
         service: SERVICE_NAME,
         version: SERVICE_VERSION,
-        [SemanticResourceAttributes.SERVICE_NAME]: SERVICE_NAME,
-        [SemanticResourceAttributes.SERVICE_VERSION]: SERVICE_VERSION,
+        // [SemanticResourceAttributes.SERVICE_NAME]: SERVICE_NAME,
+        // [SemanticResourceAttributes.SERVICE_VERSION]: SERVICE_VERSION,
     });
     const tempoSpanProcessor = new SimpleSpanProcessor(tempoExporter);
     const consoleSpanProcessor = new SimpleSpanProcessor(new ConsoleSpanExporter());
