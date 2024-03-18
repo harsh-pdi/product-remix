@@ -1173,15 +1173,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/context-async-hooks@npm:1.22.0":
-  version: 1.22.0
-  resolution: "@opentelemetry/context-async-hooks@npm:1.22.0"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.9.0"
-  checksum: 10c0/5f691b598d967a969eed5eeea122cdaa5db35f8bf399704382dd5f482edd22c9d3ca636c119ac8c23f1c9a5b84a6a5be31056771887d957560f46f4fc07c0e5d
-  languageName: node
-  linkType: hard
-
 "@opentelemetry/core@npm:0.24.0":
   version: 0.24.0
   resolution: "@opentelemetry/core@npm:0.24.0"
@@ -1865,17 +1856,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/propagator-b3@npm:1.22.0":
-  version: 1.22.0
-  resolution: "@opentelemetry/propagator-b3@npm:1.22.0"
-  dependencies:
-    "@opentelemetry/core": "npm:1.22.0"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.9.0"
-  checksum: 10c0/947633f247451e37895b5c3f8cbcba4fc96118c0c72c815bfdb49ae4b2a3c27ca9133af25db35ae938bd82b0033d986d178f253c0573389ab2dab2999d42a082
-  languageName: node
-  linkType: hard
-
 "@opentelemetry/propagator-jaeger@npm:1.21.0":
   version: 1.21.0
   resolution: "@opentelemetry/propagator-jaeger@npm:1.21.0"
@@ -1884,17 +1864,6 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ">=1.0.0 <1.8.0"
   checksum: 10c0/eba110987031c9d5c901ede49732a1a3d00f85dc48109d241c06be427b18b276a5d579146052aeed885680f67fba0f80688a8ee4589f2ff40229b6b8adcb8053
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/propagator-jaeger@npm:1.22.0":
-  version: 1.22.0
-  resolution: "@opentelemetry/propagator-jaeger@npm:1.22.0"
-  dependencies:
-    "@opentelemetry/core": "npm:1.22.0"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.9.0"
-  checksum: 10c0/b5767c4b8862783043d20ad71b66831a0004b98173b1cc8573bc6048fa0b4ed3cf9e1063c9f02e25d227ccb668cd95dacc02dde8d4af2aa294c097779f5cc79f
   languageName: node
   linkType: hard
 
@@ -2031,7 +2000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/sdk-node@npm:^0.48.0":
+"@opentelemetry/sdk-node@npm:0.48.0, @opentelemetry/sdk-node@npm:^0.48.0":
   version: 0.48.0
   resolution: "@opentelemetry/sdk-node@npm:0.48.0"
   dependencies:
@@ -2067,19 +2036,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/sdk-trace-base@npm:1.22.0":
-  version: 1.22.0
-  resolution: "@opentelemetry/sdk-trace-base@npm:1.22.0"
-  dependencies:
-    "@opentelemetry/core": "npm:1.22.0"
-    "@opentelemetry/resources": "npm:1.22.0"
-    "@opentelemetry/semantic-conventions": "npm:1.22.0"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.9.0"
-  checksum: 10c0/e7240d6e3f63e892516602eeb443803398cee171167608eb043f8d077f9489be2062f538b7e7766392db7419a33e7845f6ed070e13a0932017596b139c232950
-  languageName: node
-  linkType: hard
-
 "@opentelemetry/sdk-trace-node@npm:1.21.0":
   version: 1.21.0
   resolution: "@opentelemetry/sdk-trace-node@npm:1.21.0"
@@ -2093,22 +2049,6 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ">=1.0.0 <1.8.0"
   checksum: 10c0/e57797470f7cb4d3424391c8a4b9153f18f0e0ab91e3b499f86a695cbb48a6dbbedd0b2935ba183f847c0d2fc9859cd83b2c7357ac410ddfedc7a467102c01c2
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/sdk-trace-node@npm:^1.21.0":
-  version: 1.22.0
-  resolution: "@opentelemetry/sdk-trace-node@npm:1.22.0"
-  dependencies:
-    "@opentelemetry/context-async-hooks": "npm:1.22.0"
-    "@opentelemetry/core": "npm:1.22.0"
-    "@opentelemetry/propagator-b3": "npm:1.22.0"
-    "@opentelemetry/propagator-jaeger": "npm:1.22.0"
-    "@opentelemetry/sdk-trace-base": "npm:1.22.0"
-    semver: "npm:^7.5.2"
-  peerDependencies:
-    "@opentelemetry/api": ">=1.0.0 <1.9.0"
-  checksum: 10c0/ca42e61b44ed5f91e29e8cf5f16916fb2308d9c807181446c7c60ee61656e6e97f8c02ad4269f86ad57c252dbd25fe0af5b09521b6868b156df978a0f9b54d57
   languageName: node
   linkType: hard
 
@@ -8710,8 +8650,8 @@ __metadata:
     "@opentelemetry/exporter-trace-otlp-http": "npm:^0.48.0"
     "@opentelemetry/instrumentation": "npm:^0.48.0"
     "@opentelemetry/resources": "npm:^1.21.0"
-    "@opentelemetry/sdk-node": "npm:^0.48.0"
-    "@opentelemetry/sdk-trace-node": "npm:^1.21.0"
+    "@opentelemetry/sdk-node": "npm:0.48.0"
+    "@opentelemetry/sdk-trace-node": "npm:1.21.0"
     "@opentelemetry/semantic-conventions": "npm:^1.21.0"
     "@opentelemetry/tracing": "npm:^0.24.0"
     "@remix-run/css-bundle": "npm:^2.3.1"
