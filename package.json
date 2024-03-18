@@ -7,7 +7,7 @@
     "build": "remix build",
     "tracer": "node -r  ./tracer.cjs",
     "dev": "remix dev --manual",
-    "start-test": "NODE_OPTIONS='--require ./tracer.cjs' yarn remix dev --manual ",
+    "start-test": "NODE_OPTIONS='--require ./tracer.cjs' npm run dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
@@ -28,6 +28,7 @@
     "@remix-run/react": "^2.3.1",
     "@remix-run/serve": "^2.3.1",
     "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
     "isbot": "^3.6.8",
     "opentelemetry-instrumentation-remix": "^0.6.0",
     "react": "^18.2.0",
